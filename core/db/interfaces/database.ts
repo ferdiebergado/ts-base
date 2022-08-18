@@ -2,5 +2,8 @@ import { Config } from "./config";
 import { Connection } from "./connection";
 
 export interface Database {
-  connect: (config: Config) => Connection;
+  connect: (
+    provider: Record<string, any>,
+    config: Config
+  ) => Connection | Promise<Connection>;
 }
