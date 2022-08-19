@@ -1,5 +1,5 @@
 import { Config, Connection, Database, Entity } from "./interfaces";
-import { QueryResult } from "./interfaces/connection";
+import type { QueryResult } from "./interfaces";
 
 const config: Config = {
   host: "localhost",
